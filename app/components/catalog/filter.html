@@ -1,0 +1,94 @@
+<div class="filter">
+    <a class="filter__close flb-cc show-md icon-close"></a>
+    <div class="section__h4 flb-cc show-md mb30">Фильтр:</div>
+    <div class="filter__item mb20">
+        <a class="filter__item-title is-open">
+            <span>Бренд</span>
+            <i class="icon icon-angle-down"></i>
+        </a>
+        <div class="filter__item-props" style="display: block;">
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="checkbox" name="brands">
+                <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                <span class="checkbox-text">GE Healthcare</span>
+            </label>
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="checkbox" name="brands">
+                <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                <span class="checkbox-text">eVent Medical</span>
+            </label>
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="checkbox" name="brands">
+                <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                <span class="checkbox-text">Atmos</span>
+            </label>
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="checkbox" name="brands">
+                <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                <span class="checkbox-text">Drager</span>
+            </label>
+            <a href="" class="link-btn">Еще бренды</a>
+        </div>
+    </div>
+    <div class="filter__item mb20">
+        <a class="filter__item-title is-open">
+            <span>Цена</span>
+            <i class="icon icon-angle-down"></i>
+        </a>
+        <div class="filter__item-props" style="display: block;">
+            <div class="ionslider mb20">
+                <input type="text" class="ionslider__input" name="price" value=""
+                    data-type="double"
+                    data-min="1000"
+                    data-max="1000000"
+                    data-from="1000"
+                    data-to="1000000"
+                />
+                <div class="ionslider__fline flb-csb">
+                    <div class="ionslider__min">от <span>1000</span> ₽</div>
+                    <div class="ionslider__max">до <span>1000000</span> ₽</div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="filter__item mb20">
+        <a class="filter__item-title is-open">
+            <div class="select-option">Наличие</div>
+            <i class="icon icon-angle-down"></i>
+        </a>
+        <div class="filter__item-props" style="display: block;">
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="checkbox" name="instock">
+                <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                <span class="checkbox-text">В наличии</span>
+            </label>
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="checkbox" name="instock">
+                <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                <span class="checkbox-text">Под заказ</span>
+            </label>
+        </div>
+    </div>
+    <div class="filter__item mb20">
+        <a class="filter__item-title is-open">
+            <div class="select-option">Регистр. удостоверение</div>
+            <i class="icon icon-angle-down"></i>
+        </a>
+        <div class="filter__item-props" style="display: block;">
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="radio" name="reg" checked>
+                <span class="checkbox-inputcustom radio flb-cc"></span>
+                <span class="checkbox-text">Есть регистр. удостоверение</span>
+            </label>
+            <label class="checkbox mb15 w100">
+                <input class="checkbox-input" type="radio" name="reg">
+                <span class="checkbox-inputcustom radio flb-cc"></span>
+                <span class="checkbox-text">Нет регистр. удостоверения</span>
+            </label>
+        </div>
+    </div>
+    <div class="filter__footer flb-sb show-md">
+        <button class="catalog__filter-submit btn btn-blue">Применить</button>
+        <button class="catalog__filter-clear btn btn-grey">Очистить</button>
+    </div>
+</div>

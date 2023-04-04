@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Каталог - Категория" -->
+<!--#include virtual="/components/header/head.html" -->
+
+<body>
+    <!--#include virtual="/components/header/header.html" -->
+    <div class="catalog__scatcover mb80-80-60">
+        <img src="img/catalog/category-cover2.jpg" alt="Диваны" class="catalog__scatcover-img">
+        <div class="catalog__scatcover-icon flb-cc">
+            <img src="img/catalog/category-color-icon2.svg" width="60" height="60" alt="Диваны">
+        </div>
+        <ul class="container breadcrumbs flb-cs">
+            <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+            <li><a href="">Каталог</a> <i class="icon-angle-right"></i></li>
+            <li><span>Диваны</span></li>
+        </ul>
+        <div class="catalog__scatcover-container container">
+            <div class="catalog__scatcover-title section__h3">
+                <h1>Диваны</h1>
+            </div>
+            <div class="catalog__scatcover-subtitle section__pmd">Прямые и угловые диваны, кресла, банкетки и другое.
+                Возможность изготовления по индивидуальному дизайну.</div>
+            <div class="catalog__scatcover-catlist flb-cc">
+                <a href="" class="catalog__btnlink">Кухонные гарнитуры</a>
+                <a href="" class="catalog__btnlink">Кухонные диваны</a>
+                <a href="" class="catalog__btnlink">Кресла</a>
+                <a href="" class="catalog__btnlink">Модульные</a>
+                <a href="" class="catalog__btnlink">Кухонные диваны</a>
+                <a href="" class="catalog__btnlink">Кухонные диваны</a>
+                <a href="" class="catalog__btnlink hidden">Кухонные диваны</a>
+                <a href="" class="catalog__btnlink hidden">Кухонные диваны</a>
+                <a href="" class="catalog__btnlink hidden">Кухонные диваны</a>
+                <button class="catalog__btnlinkmore icon icon-menu-kebab-horizontal"></button>
+                <!-- Кнопка появляется если много подкатегорий -->
+            </div>
+        </div>
+    </div>
+    <div class="container mb80-80-60">
+        <div class="services__section-title mb60 flb-cs">
+            <div class="section__h5 fw-700">Акции и популярное</div>
+            <div class="section__vhr-md"></div>
+            <div class="textdescr">В Пушкино находится крупшейший мебельный центр в городе, в ассортименте более 1000
+                позиций. </div>
+        </div>
+        <!--#set var="product__itemslider-dopclass" value="mb0" -->
+        <!--#include virtual="/components/catalog/product__itemslider.html" -->
+    </div>
+    <div class="section__hr mb80-80-60"></div>
+    <div class="container mb80-80-60">
+        <!--#include virtual="/components/catalog/catalog__catcard-slider.html" -->
+        <div class="catalog__tagsblock flb-sb mt20 mb20">
+            <div class="catalog__tagsblock-title section__pxs">Теги:</div>
+            <div class="catalog__tagsblock-listbtn flb-cs scrolly-hidden">
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Диваны-кровати</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Недорогие</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Детские</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Лофт</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Ортопедические</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Недорогие</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Детские</a>
+                <a href="" class="catalog__tagsbtn btn btn-grey">#Лофт</a>
+                <a href="" class="link-btn">Показать еще</a>
+            </div>
+        </div>
+    </div>
+    <div class="catalog__horizontalfilter mb100-80-60">
+        <div class="container">
+            <div class="contacts__page-title mb40 flb-cs">
+                <div class="section__h4">Подобрать диваны по параметрам</div>
+                <div class="section__vhr-md"></div>
+                <div class="textdescr">Воспользуйтесь фильтрами, чтобы наиболее точно подобрать подходящий вам товар.</div>
+            </div>
+            <div class="flb-cs">
+                <div class="filter__item mb20 z20">
+                    <a class="filter__item-title">
+                        <div class="select-option flb-cs">
+                            <svg class="icat">
+                                <use xlink:href="#catalog-category2"></use>
+                            </svg>
+                             Подкатегории
+                        </div>
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <div class="filter__item-props" style="display: none;">
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock" checked>
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Прямые диваны</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Угловые диваны</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Кресла</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Банкетки</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Пуфы</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Пуфы для животных</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Детские диванчики</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__item mb20 z18">
+                    <a class="filter__item-title">
+                        <div class="select-option">Наличие</div>
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <div class="filter__item-props" style="display: none;">
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">В наличии</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Под заказ</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Отсутствует в продаже</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__item mb20 z16">
+                    <a class="filter__item-title">
+                        <div class="select-option">Стоимость товара</div>
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <div class="filter__item-props" style="display: none;">
+                        <div class="ionslider mb20 mt10">
+                            <input type="text" class="ionslider__input" 
+                                name="price" 
+                                value=""
+                                data-type="double"
+                                data-min="500"
+                                data-max="50000"
+                                data-from="500"
+                                data-to="50000"
+                                data-postfix=" ₽"
+                            />
+                            <div class="ionslider__fline flb-csb">
+                                <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>500</span> ₽</div></div>
+                                <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>50000</span> ₽</div></div>
+                            </div>
+                        </div> 
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Менее 20 000 ₽</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">20 000 ₽ - 40 000 ₽</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">40 000 ₽ - 100 000 ₽</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Более 100 000 ₽</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__item mb20 z14 hidden">
+                    <a class="filter__item-title">
+                        <div class="select-option flb-cs">
+                            <svg class="icat">
+                                <use xlink:href="#catalog-category2"></use>
+                            </svg>
+                             Подкатегории
+                        </div>
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <div class="filter__item-props" style="display: none;">
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock" checked>
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Прямые диваны</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Угловые диваны</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Кресла</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Банкетки</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Пуфы</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Пуфы для животных</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Детские диванчики</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__item mb20 z12 hidden">
+                    <a class="filter__item-title">
+                        <div class="select-option">Наличие</div>
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <div class="filter__item-props" style="display: none;">
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">В наличии</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Под заказ</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="instock">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Отсутствует в продаже</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__item mb20 z10 hidden">
+                    <a class="filter__item-title">
+                        <div class="select-option">Стоимость товара</div>
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <div class="filter__item-props" style="display: none;">
+                        <div class="ionslider mb20 mt10">
+                            <input type="text" class="ionslider__input" 
+                                name="price" 
+                                value=""
+                                data-type="double"
+                                data-min="500"
+                                data-max="50000"
+                                data-from="500"
+                                data-to="50000"
+                                data-postfix=" ₽"
+                            />
+                            <div class="ionslider__fline flb-csb">
+                                <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>500</span> ₽</div></div>
+                                <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>50000</span> ₽</div></div>
+                            </div>
+                        </div> 
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Менее 20 000 ₽</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">20 000 ₽ - 40 000 ₽</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">40 000 ₽ - 100 000 ₽</span>
+                        </label>
+                        <label class="checkbox">
+                            <input class="checkbox-input" type="checkbox" name="price">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text">Более 100 000 ₽</span>
+                        </label>
+                    </div>
+                </div>
+                <a class="catalog__horizontalfilter-showmore link-btn">Показать еще</a>
+                <a class="btn btn-dark-sdw">Подобрать</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="catalog__title section__h5 mb40 flb-cs">
+            <div class="catalog__title-icon flb-cc"><img src="img/catalog/subcategory/cat-img.png" width="80" height="80" alt="Прямые диваны"></div>
+            <div class="section__vhr-md"></div>
+            <div class="catalog__title-span"><a href="">Прямые диваны</a> <div class="section__psm">Товаров в каталоге: 26</div></div>
+        </div>
+    </div>
+    <!--#include virtual="/components/catalog/catalog__sgroup.html" -->
+    <div class="section__hr mt0 mb80-80-60"></div>
+    <div class="container">
+        <div class="catalog__title section__h5 mb40 flb-cs">
+            <div class="catalog__title-icon flb-cc"><img src="img/catalog/subcategory/cat-img2.png" width="80" height="80" alt="Угловые диваны"></div>
+            <div class="section__vhr-md"></div>
+            <div class="catalog__title-span"><a href="">Угловые диваны</a> <div class="section__psm">Товаров в каталоге: 26</div></div>
+        </div>
+    </div>
+    <!--#include virtual="/components/catalog/catalog__sgroup.html" -->
+    <div class="section__hr mt0 mb80-80-60"></div>
+    <div class="container">
+        <div class="catalog__title section__h5 mb40 flb-cs">
+            <div class="catalog__title-icon flb-cc"><img src="img/catalog/subcategory/cat-img3.png" width="80" height="80" alt="Кресла"></div>
+            <div class="section__vhr-md"></div>
+            <div class="catalog__title-span"><a href="">Кресла</a> <div class="section__psm">Товаров в каталоге: 26</div></div>
+        </div>
+    </div>
+    <div class="catalog__sgroup container mb100-80-80">
+        <div class="mb20 show-md">
+            <!--#include virtual="/components/info/stock__slider.html" -->
+        </div>
+        <div class="catalog__sgroup-rowslider row mb-m20 slickslider--navbottom">
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item2.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item2.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item2.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                <!--#include virtual="/components/catalog/product__item.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb20 flb-cc hide-md">
+                <a href="" class="catalog__sgroup-showallbtn flb-cc">
+                    <i class="btn icon-close"></i>
+                    <span>Показать еще </span>
+                </a>    
+            </div>
+        </div>
+    </div>
+    <div class="section__hr mt0 mb80-80-60"></div>
+    <div class="container">
+        <div class="catalog__title section__h5 mb40 flb-cs">
+            <div class="catalog__title-icon flb-cc"><img src="img/catalog/subcategory/cat-img2.png" width="80" height="80" alt="Угловые диваны"></div>
+            <div class="section__vhr-md"></div>
+            <div class="catalog__title-span"><a href="">Угловые диваны</a> <div class="section__psm">Товаров в каталоге: 26</div></div>
+        </div>
+    </div>
+    <!--#include virtual="/components/catalog/catalog__sgroup.html" -->
+    <div class="company__fcontent">
+        <div class="container">
+            <div class="section__h5 mb40">
+                <h2>SEO-текст</h2>
+            </div>
+            <div class="content">
+                <p>Мебель более чем от 100 Фабрик России, собранная для Вас в одном месте по самым доступным ценам.</p>
+                <p>Ассортимент продукции и структура каталога представлена из разных ценовых сегментов. Мы позаботились,
+                    чтобы каждый покупатель смог найти продукцию отличного качества по комфортной цене. Модели
+                    разнообразны и структурированы по назначению, стилистике, дизайну, материалам. «100 Фабрик» - это
+                    обширный и глубокий, иллюстрированный каталог мебели отечественных производителей. Созданный и
+                    направленный на то, чтобы наши покупатели легко нашли подходящие модели.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

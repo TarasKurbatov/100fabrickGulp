@@ -1,0 +1,165 @@
+// Fonts Setting
+$fontsize: 16px; 
+$lineheight: 1.4; 
+$userfont:  'Raleway'; 
+
+// Colors
+$text:  #343B4C;
+$black: #212631;
+$dark:  #343B4C;
+$dark2:   #212631;
+$dark3:  #212631;
+$ldark: #343B4C;
+
+$grey:  #A1A4AE;
+$lgrey: #F8F9FC;
+$dgrey: #787878;
+
+$blue:  #1E87D1;
+$lblue: #98cbf1;
+$dblue: #0d2c8d;
+
+$green:  #00BC62;
+$lgreen: #40e5aa;
+$dgreen: #1a8b62;
+
+$ylw:   #efd208;
+$lylw:  #f7e250;
+$dylw:  #c1aa0e;
+
+$orange:  #FF965B;
+$lorange: #ffa961;
+$dorange: #dd6600;
+
+$red:  #ED1846;
+$lred: #f83660;
+$dred: #cf0d37;
+
+
+// Mixin
+@mixin animate{transition: all .15s ease;}
+@mixin transition{transition: all .15s ease;}
+@mixin transition3{transition: all .3s ease;}
+
+@mixin flb-wr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    >* {margin-left: 20px;}
+}
+@mixin nowrap {
+    flex-wrap: initial;
+}
+@mixin flb-cc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flb-csb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flb-sb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &.a-end{
+        align-items: flex-end;
+    }
+}
+@mixin flb-sar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@mixin flb-sc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin flb-cs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin flb-ss {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin flb-s_end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+@mixin flb-c_end {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+}
+
+@mixin iconmoon($icon){
+    display: inline-block;
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: $icon;
+}
+
+// GRID -----------------------------------
+
+// Mobile fisrt breakpoint ---
+
+$fmbp-sm: 577px;
+$fmbp-md: 768px;
+$fmbp-lmd: 822px;
+$fmbp-lg: 992px;
+$fmbp-xl: 1200px;
+$fmbp-exl: 1440px;
+
+// Mobile last breakpoint ---
+
+$lmbp-sm: 576px;
+$lmbp-md: 767px;
+$lmbp-lmd: 821px;
+$lmbp-lg: 991px;
+$lmbp-xl: 1199px;
+$lmbp-exl: 1439px;
+
+// Container ---
+
+$container: 100%;
+$container-sm: 100%;
+$container-md: 720px;
+$container-lmd: 780px;
+$container-lg: 960px;
+$container-xl: 1140px;
+$container-exl: 1320px;
+
+// Gutter ---
+
+$gutter: 15px; 
+$gutter-sm: 15px; 
+$gutter-md: 10px; 
+$gutter-lg: 10px; 
+$gutter-xl: 10px; 
+$gutter-exl: 10px; 

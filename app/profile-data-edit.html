@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Редактировать личные данные - Личный кабинет" -->
+<!--#include virtual="/components/header/head.html" -->
+
+<body>
+    <!--#include virtual="/components/header/header.html" -->
+    <main class="profile__page section__page">
+        <div class="container">
+            <ul class="breadcrumbs flb-cs">
+                <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+                <li><a href="">Личный кабинет</a> <i class="icon-angle-right"></i></li>
+                <li><span>Редактировать личные данные</span></li>
+            </ul>
+            <div class="profile__page-header flb-cs mb40">
+                <img src="img/profile/avatar.jpg" width="60" height="60" alt="Ильгова Ирина" class="profile__page-header_photo">
+                <div class="profile__page-header_name">
+                    <small>Личный кабинет</small>
+                    <div class="section__h5">Ильгова Ирина</div>
+                </div>
+                <nav class="profile__page-header_nav flb-ss">
+                    <a href="" class="btn btn-grey">Личные данные</a>
+                    <a href=""  class="btn btn-grey">История покупок</a>
+                    <a href="" class="btn btn-grey">Избранные товары</a>
+                    <a href="" class="btn btn-grey logout--btn">Выйти из аккаунта</a>
+                </nav>
+            </div>
+            <div class="section__h3 mb15">
+                <h1>Редактировать личные данные</h1>
+            </div>
+            <div class="mb30"><b>Проверьте свой E-mail</b> адрес, и перейдите по ссылке для ввода нового пароля.</div>
+            <form method="post" action="" class="form">
+                <div class="row flb-cs mb20">
+                    <div class="col-12 mb10 section__psm">Данные для авторизации:</div>
+                    <div class="col-exl-3 col-lg-4 col-md-6 mb20">
+                        <div class="input-wrap focus">
+                            <div class="label-input">Логин<span class="red">*</span></div>
+                            <input type="text" name="login" value="ilgova22040" class="input required" required="required">
+                            <div class="error-text">Поля обязательное для заполнения</div>
+                            <a class="value-clear icon-close-r"></a>
+                        </div>
+                    </div>
+                    <div class="col-exl-3 col-lg-4 col-md-6 mb20">
+                        <div class="input-wrap focus" data-js="togglereq_email">
+                            <div class="label-input">E-mail<span class="red">*</span></div>
+                            <input type="email" name="name" value="ilgova22040@gmail.com" class="input required">
+                            <div class="error-text">Поля обязательное для заполнения</div>
+                            <a class="value-clear icon-close-r"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb20">
+                        <label class="checkbox checkbox mb5 w100" data-js="togglereq_email">
+                            <input class="checkbox-input" name="yes_email" type="checkbox" checked>
+                            <span class="checkbox-inputcustom icon-check flb-cc checked"></span>
+                            <span class="checkbox-text fz14">У меня нет E-mail</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb20">
+                    <div class="col-12 mb10 section__psm">Личные данные:</div>
+                    <div class="col-exl-4 col-lg-5 col-md-6 mb20">
+                        <div class="input-wrap focus">
+                            <div class="label-input">Имя<span class="red">*</span></div>
+                            <input type="text" name="name" value="Ирина" class="input required" required="required">
+                            <div class="error-text">Поля обязательное для заполнения</div>
+                            <a class="value-clear icon-close-r"></a>
+                        </div>
+                    </div>
+                    <div class="col-exl-4 col-lg-5 col-md-6 mb20">
+                        <div class="input-wrap focus">
+                            <div class="label-input">Фамилия<span class="red">*</span></div>
+                            <input type="email" name="name_second" value="Ильгова" class="input required" required="required">
+                            <div class="error-text">Поля обязательное для заполнения</div>
+                            <a class="value-clear icon-close-r"></a>
+                        </div>
+                    </div>
+                    <div class="col-12"></div>
+                    <div class="col-exl-8 col-lg-10 mb20">
+                        <div class="input-wrap focus">
+                            <div class="label-input">Телефон</div>
+                            <input type="email" name="name_second" value="+7 999 999-90-90" class="input">
+                            <div class="error-text">Поля обязательное для заполнения</div>
+                            <a class="value-clear icon-close-r"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flb-cs">
+                    <div class="col-exl-3 col-lg-4 col-md-5 mb20">
+                        <button class="btn btn-red btn-submit w100">Изменить данные</button>
+                    </div>
+                    <div class="col-exl-5 col-lg-5 col-md-7 mb20">
+                        <label class="checkbox checkbox-confid checkbox--required">
+                            <input class="checkbox-input" type="checkbox" name="">
+                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                            <span class="checkbox-text fz14">Я соглашаюсь с условиями <a href=""> пользовательского соглашения</a> и даю согласие на обработку персональных данных</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

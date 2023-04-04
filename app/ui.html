@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="UI" -->
+<!--#include virtual="/components/header/head.html" -->
+<body>
+    <div class="container mb50">
+        <div class="row mb40">
+            <div class=" col-xl-3 col-lg-4 mb20">
+                <button class="btn btn-red mr20 mb20 w100">Кнопка</button>
+            </div>
+            <div class=" col-xl-3 col-lg-4 mb20">
+                <button class="btn btn-dark mr20 mb20 w100 show-popup" data-popup="popupbackcall" data-title="Заказать обратный звонок">Заказать звонок</button>
+            </div>
+            <div class=" col-xl-3 col-lg-4 mb20">
+                <div class="input-wrap">
+                    <div class="label-input">Имя<span class="blue">*</span></div>
+                    <input type="text" name="name" value="" class="input required" required="required">
+                    <div class="error-text">Поля обязательное для заполнения</div>
+                    <a class="value-clear icon-close-r"></a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <div class="select">
+                    <div class="select-input flb-cs">
+                        <input type="hidden" name="select" value="1">
+                        <div class="select-inputvalue">Select</div>
+                        <i class="icon icon-angle-down"></i>
+                    </div>
+                    <div class="select-options">
+                        <div class="select-optionvalue">1</div>
+                        <div class="select-optionvalue">2</div>
+                        <div class="select-optionvalue">3</div>
+                        <div class="select-optionvalue">4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 mb20">
+                <div class="ionslider mb20 mt20">
+                    <input type="text" class="ionslider__input" 
+                        name="price" 
+                        value=""
+                        data-type="double"
+                        data-min="500"
+                        data-max="50000"
+                        data-from="500"
+                        data-to="50000"
+                        data-postfix=" ₽"
+                    />
+                    <div class="ionslider__fline flb-csb">
+                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>500</span> ₽</div></div>
+                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>50000</span> ₽</div></div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-3">
+                <div class="counter flb-csb">
+                    <button class="counter-minus counter-btn">-</button>
+                    <input class="counter-value" type="number" value="1">
+                    <button class="counter-plus counter-btn">+</button>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <label class="checkbox mb5 w100">
+                    <input class="checkbox-input" type="checkbox" name="">
+                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                    <span class="checkbox-text">flexcheckbox</span>
+                </label>
+                <label class="checkbox mb5 w100">
+                    <input class="checkbox-input" type="checkbox" name="">
+                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                    <span class="checkbox-text">flexcheckbox</span>
+                </label>
+            </div>
+            <div class="col-lg-2">
+                <label class="checkbox mb5 w100">
+                    <input class="checkbox-input" type="radio" name="radio">
+                    <span class="checkbox-inputcustom radio flb-cc"></span>
+                    <span class="checkbox-text">flexcheckbox Radio</span>
+                </label>
+                <label class="checkbox mb5 w100">
+                    <input class="checkbox-input" type="radio" name="radio">
+                    <span class="checkbox-inputcustom radio flb-cc"></span>
+                    <span class="checkbox-text">flexcheckbox Radio</span>
+                </label>
+            </div>         
+            <div class="col-lg-3 mb20">
+                <div class="section__subtitle mb15">Рейтинг:</div>
+                <div class="rating-input mb20">
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="rating-5">
+                        <label for="rating-5" class="icon-bx-star"></label>
+                        <input type="radio" name="rating" value="4" id="rating-4">
+                        <label for="rating-4" class="icon-bx-star"></label>
+                        <input type="radio" name="rating" value="3" id="rating-3">
+                        <label for="rating-3" class="icon-bx-star"></label>
+                        <input type="radio" name="rating" value="2" id="rating-2">
+                        <label for="rating-2" class="icon-bx-star"></label>
+                        <input type="radio" name="rating" value="1" id="rating-1">
+                        <label for="rating-1" class="icon-bx-star"></label>
+                    </div>
+                    <div class="flb-cc w100"><div class="error-text">Поля обязательное для заполнения</div></div>
+                </div>
+            </div>   
+            <div class="col-lg-4 mb20">
+                <div class="attachfile-wrap">
+                    <div class="attachfile-list flb-cc mb20">
+                        <div class="attachfile-listdoc">
+                            <img src="img/catalog/product-item1_1.jpg" width="72" height="48" alt="altitle">
+                        </div>
+                        <div class="attachfile-listdoc">
+                            <img src="img/catalog/product-item1_1.jpg" width="72" height="48" alt="altitle">
+                        </div>
+                        <div class="attachfile-listdoc">
+                            <img src="img/catalog/product-item1_1.jpg" width="72" height="48" alt="altitle">
+                        </div>
+                        <div class="attachfile-listdoc flb-cc">
+                            <div class="attachfile-listdoc_dopcount">+2</div>
+                        </div>
+                    </div>
+                    <div class="flb-cc">
+                        <label class="attachfile-uploadbtn flb-cc mb30">
+                            <input type="file" value="" name="photo">
+                            <img src="img/icona-moon/attachment.svg" width="24" height="24" alt="Прикрепить фотографию" class="icon">
+                            <span>Добавить аватар к отзыву </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <label class="product__radiobtn checkbox w100 mb10">
+                    <input class="checkbox-input" type="radio" name="radio">
+                    <div class="btn">
+                        <span class="checkbox-inputcustom radio flb-cc"></span>
+                        <div class="product__item-price">
+                            <div class="sml oldprice">За полотно</div>
+                            <span>3 454 ₽</span>
+                        </div>
+                    </div>
+                </label>
+                <label class="product__radiobtn checkbox w100 mb10">
+                    <input class="checkbox-input" type="radio" name="radio" checked="">
+                    <div class="btn">
+                        <span class="checkbox-inputcustom radio flb-cc"></span>
+                        <div class="product__item-price">
+                            <div class="sml oldprice">За комплект</div>
+                            <span>3 454 ₽  <span class="prsale">-25%</span></span>
+                        </div>
+                    </div>
+                </label>
+            </div>  
+            <div class="col-12 mb20">
+                <hr class="mb20">
+            </div>
+            <div class="col-lg-6">
+                <div class="section__h1 mb20">Title h1 - <a href="">Ссылки</a></div>
+                <div class="section__h2 mb20">Title h2 - <a href="">Ссылки</a></div>
+                <div class="section__h3 mb20">Title h3 - <a href="">Ссылки</a></div>
+                <div class="section__h4 mb20">Title h4 - <a href="">Ссылки</a></div>
+                <div class="section__h5 mb20">Title h5 - <a href="">Ссылки</a></div>
+                <div class="section__h6 mb20">Title h6 - <a href="">Ссылки</a></div>
+            </div>
+           
+            
+        </div>
+        <div class="row">
+            <div class="col-12 mb20">
+                <hr>
+            </div>
+            <div class="col-lg-3 mb40">
+                <ul class="container breadcrumbs flb-cs">
+                    <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+                    <li><a href="">Каталог</a> <i class="icon-angle-right"></i></li>
+                    <li><span>Категория</span></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb40">
+                <ul class="catalog__ulcategory">
+                    <li class="lititle"><a href="">Кухонные гарнитуры</a></li>
+                    <li><a href="">До 10 000</a></li>
+                    <li><a href="">Угловые</a></li>
+                    <li><a href="">Массив</a></li>
+                    <li><a href="">Маленькие</a></li>
+                    <li><a href="">Пластик</a></li>
+                </ul> 
+            </div>
+            <div class="col-lg-12 mb20">
+                <div class="catalog__tagsblock-listbtn flb-cs scrolly-hidden">
+                    <a href="" class="catalog__tagsbtn btn btn-grey">Кухни модульные</a>
+                    <a href="" class="catalog__tagsbtn btn btn-grey">Пластик</a>
+                    <a href="" class="catalog__tagsbtn btn btn-grey">Недорогие</a>
+                    <a href="" class="catalog__tagsbtn btn btn-grey">Классические</a>
+                    <a href="" class="catalog__tagsbtn btn btn-grey">Современные</a>
+                    <a href="" class="catalog__tagsbtn btn btn-grey">Массив</a>
+                    <a href="" class="catalog__tagsbtn btn btn-grey">МДФ</a>
+                </div>
+            </div>
+            <div class="col-12 mb20">
+                <hr>
+            </div>
+            <div class="col-lg-4 mb20">
+                <div class="catalog__catcard">
+                    <div class="catalog__catcard-header">
+                        <img src="img/catalog/category-color-icon1.svg" width="60" height="60" alt="Кухни">
+                        <div class="catalog__catcard-title"><a href="">Кухни</a></div>
+                        <div class="catalog__catcard-count">48 вариантов</div>
+                    </div>
+                    <div class="catalog__catcard-listlink flb-ss">
+                        <a href="" class="catalog__btnlink">Кухонные гарнитуры</a> 
+                        <a href="" class="catalog__btnlink">Кухонные диваны</a> 
+                        <a href="" class="catalog__btnlink">Кресла</a> 
+                        <a href="" class="catalog__btnlink">Модульные</a> 
+                        <a href="" class="catalog__btnlink">Кухонные диваны</a> 
+                        <a href="" class="catalog__btnlink">Кухонные диваны</a> 
+                        <a href="" class="catalog__btnlinkmore icon icon-menu-kebab-horizontal"></a> 
+                    </div>
+                    <img src="img/catalog/category-mobile-cover1.jpg" alt="Кухни" class="catalog__catcard-img">
+                </div>
+            </div>
+            <div class="col-12 mb20">
+                <hr>
+            </div>
+            <div class="col-lg-3 mb20">
+                <!--#include virtual="/components/catalog/product__item.html" -->
+            </div>
+            <div class="col-lg-3 mb20">
+                <!--#include virtual="/components/catalog/product__item2.html" -->
+            </div>
+            <div class="col-lg-3  mb20">
+                <a href="" class="catalog__sgroup-showallbtn flb-cc h100">
+                    <i class="btn icon-close"></i>
+                    <span>Перейти в раздел</span>
+                </a>    
+            </div>
+            <div class="col-12 mb20">
+                <hr class="mb40">
+            </div>
+            <div class="col-12 mb40">
+                <!--#set var="cartproduct__item-dopclass" value="mb20" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_bcomplect.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_bnew.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_bsale.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_bnew.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_bsale.html" -->
+            </div>
+            <div class="col-12 mb20">
+                <hr class="mb40">
+            </div>
+            <div class="col-12 mb40">
+                <!--#include virtual="/components/catalog/cartproduct__item_hsr_bcomplect.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_hsr_new.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_hsr_new.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_hsr_new.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_hsr_bcomplect.html" -->
+                <!--#include virtual="/components/catalog/cartproduct__item_hsr_new.html" -->
+            </div>
+            <div class="col-12 mb20">
+                <hr class="mb40">
+            </div>
+            <div class="col-12 mb20">
+                <div class="services__listblock flb-csb">
+                    <div class="services__listblock-icon flb-cc">
+                        <img src="img/services/dellivery-icon1.svg" width="64" height="64" alt="Кресло-мешок, стул, табуреты, столик для ноутбука, вешалка, пуф, полка и т.д.">
+                    </div>
+                    <div class="services__listblock-caption">
+                        <div class="section__psm mb5">1-я категория</div>
+                        <div>Кресло-мешок, стул, табуреты, столик для ноутбука, вешалка, пуф, полка и т.д.</div>
+                    </div>
+                    <div class="services__listblock-price">395 руб.</div>
+                </div>
+            </div>
+            <div class="col-12 mb20">
+                <hr class="mb40">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 mb40">
+                <!--#include virtual="/components/info/news__item.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 mb40">
+                <!--#include virtual="/components/info/news__item2.html" -->
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 mbmb4020">
+                <div class="section__imgblock">
+                    <a href="img/services/razrabotka/gallery-img4.jpg" class="section__img section__gallery-foto">
+                        <img src="img/services/razrabotka/gallery-img4.jpg" alt="Фото" loading="lazy">
+                    </a>
+                    <button class="section__imgblock-btn btn btn-red show-popup" data-popup="popupbackcall"
+                        data-title="Заказать">Мне нравится! Хочу подобное!</button>
+                </div>
+            </div>
+            <div class="col-lg-3 mb40">
+                <div class="news__detail-share">
+                    <div>Поделиться новостью:</div>
+                    <div class="flb-cs mt20">
+                        <div class="contacts__social flb-cs mb20 mr20">
+                            <a href="" target="_blank" class="flb-cc icon-telegram"></a>
+                            <div class="contacts__social-sepator brc--dark"></div>
+                            <a href="" target="_blank" class="flb-cc icon-vk"></a>
+                            <a href="" target="_blank" class="flb-cc icon-odnoklassniki"></a>
+                            <a href="" target="_blank" class="flb-cc icon-facebook"></a>
+                        </div>
+                        <button class="contacts__social-copylink btn btn-grey h40 mb20 w100-mobile">
+                            <i class="icon icon-file-copy"></i>
+                            <span>Скопировать ссылку</span>
+                        </button> 
+                    </div> 
+                </div>
+            </div>
+            <div class="col-12 mb20">
+                <hr class="mb40">
+            </div>
+            <div class="col-lg-6 mb20">
+                <!--#include virtual="/components/info/stock__slider.html" -->
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

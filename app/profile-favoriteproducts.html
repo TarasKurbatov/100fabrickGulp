@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Избранные товары - Личный кабинет" -->
+<!--#include virtual="/components/header/head.html" -->
+
+<body>
+    <!--#include virtual="/components/header/header.html" -->
+    <main class="profile__page section__page">
+        <div class="container">
+            <ul class="breadcrumbs flb-cs">
+                <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+                <li><a href="">Личный кабинет</a> <i class="icon-angle-right"></i></li>
+                <li><span>Избранные товары</span></li>
+            </ul>
+            <div class="profile__page-header flb-cs mb40">
+                <img src="img/profile/avatar.jpg" width="60" height="60" alt="Ильгова Ирина" class="profile__page-header_photo">
+                <div class="profile__page-header_name">
+                    <small>Личный кабинет</small>
+                    <div class="section__h5">Ильгова Ирина</div>
+                </div>
+                <nav class="profile__page-header_nav flb-ss">
+                    <a href="" class="btn btn-grey">Личные данные</a>
+                    <a href="" class="btn btn-grey">История покупок</a>
+                    <span class="btn btn-grey btn-grey-disabled">Избранные товары</span>
+                    <a href="" class="btn btn-grey logout--btn">Выйти из аккаунта</a>
+                </nav>
+            </div>
+            <div class="profile__page-title mb40 flb-cs">
+                <div class="section__h3"><h1>Избранные товары</h1></div>
+                <div class="section__vhr-md"></div>
+                <div class="textdescr">Товары которые вы добавили в список избранного.</div>
+            </div>
+            <div class="catalog__sortselect mb30">
+                <span>Сортировка:</span>
+                <a href="">
+                    <span>Сначала дешевые</span>
+                    <i class="icon-sorting-down"></i>
+                </a>
+            </div>
+            <div class="row mb20">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item.html" -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item2.html" -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item.html" -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item2.html" -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item.html" -->
+                </div>
+                 <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item.html" -->
+                </div>
+                 <div class="col-xl-3 col-lg-4 col-md-6 mb20">
+                    <!--#include virtual="/components/catalog/product__item.html" -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb20 flb-cc hide-md">
+                    <a href="" class="catalog__sgroup-showallbtn flb-cc">
+                        <i class="btn icon-close"></i>
+                        <span>Показать еще </span>
+                    </a>    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

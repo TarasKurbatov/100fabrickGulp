@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Сборка мебели" -->
+<!--#include virtual="/components/header/head.html" -->
+
+<body>
+    <!--#include virtual="/components/header/header.html" -->
+    <main class="section__page">
+        <div class="container">
+            <ul class="breadcrumbs flb-cs">
+                <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+                <li><span>Вызов замерщика</span></li>
+            </ul>
+            <div class="services__page-hnav flb-cs mb30">
+                <div class="services__page-hnav_title section__h6 flb-cs">
+                    <span>Услуги</span>
+                    <i class="icon-angle-right"></i>
+                </div>
+                <nav class="services__page-hnav_btnlist flb-ss">
+                    <a href="" class="btn btn-grey ">Условия доставки</a>
+                    <a href="" class="btn btn-grey">Сборка мебели</a>
+                    <span class="btn btn-grey btn-grey-disabled">Вызов замерщика</span>
+                    <a href="" class="btn btn-grey">Производство на заказ</a>
+                    <a href="" class="btn btn-grey">Разработка дизайн-проекта</a>
+                    <!--Если много будет услуг-->
+                    <!--
+                        Если много будет услуг
+                        <a href="" class="btn btn-grey hidden">Сборка мебели</a>
+                        <a href="" class="btn btn-grey hidden">Вызов замерщика</a>
+                        <a href="" class="btn btn-grey hidden">Производство на заказ</a>
+                        <a href="" class="btn btn-grey hidden">Разработка дизайн-проекта</a>
+                        <button class="services__page-hnav_btnmore btn btn-dark"><i class="icon icon-menu-kebab-horizontal"></i></button>
+                    -->
+                </nav>
+            </div>
+            <div class="row flb-sb mb40 mb-lg-20">
+                <div class="col-exl-5 col-lg-6 mb40 content">
+                    <h1>Вызов замерщика</h1>
+                    <p>При заказе кухонь вам могут понадобиться услуги <b>специалиста-замерщика</b>. Учитывая особенности архитектуры, неровности стен, особенности конструкции помещения, а также ваши персональные пожелания, он поможет вам правильно определить размеры кухонного гарнитура, что позволит избежать сложностей при сборке и установке мебели.</p>
+                    <p>Оформить заявку на вызов замерщика вы можете, связавшись с нашими менеджерами по телефону: <a href="tel:84951500410" class="phone-link-red">8 495 150-04-10</a>, после чего специалист-замерщик приедет к Вам в условленное время для проведения замера помещения.</p>
+                </div>
+                <div class="col-lg-6 mb40">
+                    <!--#set var="company__slider-dopclass" value="type-greybg sticky" -->
+                    <!--#set var="company__slider-altimg" value="Вызов замерщика" -->
+                    <!--#set var="company__slider-imgfirst" value="img/company/about-slider2.jpg" -->
+                    <!--#include virtual="/components/company/company__slider.html" -->
+                </div>
+            </div>
+            <div class="services__pricelist mb80 mb-lg-60">
+                <div class="section__h6 fw-700 mb20">Прайс на услуги специалиста-замерщика:</div>
+                <div class="services__pricelist-table">
+                    <div class="services__pricelist-tabletr flb-csb">
+                        <div>В пределах МКАД</div>
+                        <div>1 500 ₽</div>
+                    </div>
+                    <div class="services__pricelist-tabletr flb-csb">
+                        <div>За пределами МКАД</div>
+                        <div>1 500 руб. + 30 ₽/км</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

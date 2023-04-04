@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Личный кабинет" -->
+<!--#include virtual="/components/header/head.html" -->
+<body>
+    <div class="header">
+        <!--#include virtual="/components/header/header__top.html" -->
+        <!--#include virtual="/components/header/header__nav.html" -->
+        <!--#include virtual="/components/header/header__search.html" -->
+        <!--#include virtual="/components/header/header__catalog.html" -->
+    </div>
+    <div class="header__modal is-show">
+        <div class="header__modal-navigation flb-csb">
+            <div class="header__contacts">
+                <div class="header__contacts-phone"><a href="tel:+78005553238">8 800 555-32-38</a></div>
+                <div class="header__contacts-smphone"><a href="tel:84951500410">8 495 150-04-10</a></div>
+            </div>
+            <div class="header__navmodals flb-ss">
+                <button class="header__navmodals-btn flb-cc" data-nav="shops">
+                    <i class="icon-location-100store"></i>
+                    <span>Магазины</span>
+                </button>
+                <button class="header__navmodals-btn is-active flb-cc" data-nav="auth">
+                    <i class="icon-profile-circle"></i>
+                    <span>Аккаунт</span>
+                </button>
+                <button class="header__navmodals-btn flb-cc" data-nav="cart">
+                    <i class="icon-shopping-bag"></i>
+                    <span>Корзина</span>
+                </button>
+            </div>
+            <button class="header__modal-close flb-cc icon-close"></button> 
+        </div>
+        <!--#include virtual="/components/header/header__modal-storelist.html" -->
+        <!--#include virtual="/components/header/header__modal-profileforms_islogin.html" -->
+        <!--#include virtual="/components/header/header__modal-cart.html" -->
+    </div>
+    <div class="header__menumobile"></div>
+    <!--#include virtual="/components/header/header__navmobile.html" -->
+    <div class="header__overlay"></div>
+    <div class="header__overlay2"></div>
+    <div class="header__overlay3" style="display: block;"></div>
+    <main class="profile__page section__page">
+        <div class="container">
+            <ul class="breadcrumbs flb-cs">
+                <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+                <li><a href="">Личный кабинет</a> <i class="icon-angle-right"></i></li>
+                <li><span>Личные данные</span></li>
+            </ul>
+            <div class="profile__page-header flb-cs mb40">
+                <img src="img/profile/avatar.jpg" width="60" height="60" alt="Ильгова Ирина" class="profile__page-header_photo">
+                <div class="profile__page-header_name">
+                    <small>Личный кабинет</small>
+                    <div class="section__h5">Ильгова Ирина</div>
+                </div>
+                <nav class="profile__page-header_nav flb-ss">
+                    <span class="btn btn-grey btn-grey-disabled">Личные данные</span>
+                    <a href="" class="btn btn-grey">История покупок</a>
+                    <a href="" class="btn btn-grey">Избранные товары</a>
+                    <a href="" class="btn btn-grey logout--btn">Выйти из аккаунта</a>
+                </nav>
+            </div>
+            <div class="profile__page-title mb40 flb-cs">
+                <div class="section__h3">
+                    <h1>Личный кабинет</h1>
+                </div>
+                <div class="section__vhr-md"></div>
+                <div class="textdescr">Ваша контактная информация и адреса доставки.</div>
+            </div>
+            <div class="profile__mdataform form flb-cs mb25">
+                <div class="profile__mdataform-col">
+                    <div class="profile__mdataform-label">ФИО</div>
+                    <div class="profile__mdataform-value">Ильгова Ирина</div>
+                    <!-- <div class="input-wrap hidden">
+                        <input type="text" name="name" value="Ильгова Ирина" class="input">
+                    </div>
+                    <div class="section__vhr-md"></div> -->
+                </div>
+                <div class="profile__mdataform-col">
+                    <div class="profile__mdataform-label">Номер телефона:</div>
+                    <div class="profile__mdataform-value">+7(968)123-77-31</div>
+                </div>
+                <div class="profile__mdataform-col">
+                    <div class="profile__mdataform-label">E-mail:</div>
+                    <div class="profile__mdataform-value">Ilgovairina@yandex.ru</div>
+                </div>
+                <a class="profile__mdataform-npasswordlink btn btn-grey">Изменить пароль</a>
+                <a class="profile__mdataform-edit btn btn-grey">Редактировать информацию</a>
+                <!-- <button class="profile__mdataform-submit btn btn-red btn-submit hidden">Сохранить информацию</button> -->
+            </div>
+            <form action="" method="post" class="profile__mdelliveryform">
+                <div class="profile__mdelliveryitem flb-cs mb25">
+                    <div class="profile__mdelliveryitem-col">
+                        <div class="profile__mdelliveryitem-label">Адрес доставки <span class="delllabel_cout">1</span>:</div>
+                        <div class="profile__mdelliveryitem-value">357990, г. Москва, ул. Ленина, 242</div>
+                        <div class="input-wrap hidden">
+                            <input type="email" name="email" value="357990, г. Москва, ул. Ленина, 242" class="input required" required="">
+                            <div class="error-text">Поля обязательное для заполнения</div>
+                        </div>
+                    </div>
+                    <div class="profile__mdelliveryitem-rblock flb-csb">
+                        <a class="profile__mdelliveryitem-edit btn btn-grey">Редактировать информацию</a>
+                        <a class="profile__mdelliveryitem-submit btn btn-red btn-submit hidden">Сохранить информацию</a>
+                        <a class="profile__mdelliveryitem-remove flb-cc icon-trash"></a>
+                    </div>
+                </div>
+            </form>
+            <button class="profile__adddelladdress btn btn-grey">
+                <i class="icon icon-close"></i>
+                <span>Добавить еще адрес доставки</span>
+            </button>
+            <div class="profile__mdelliveryitem clone--item hidden flb-cs mb25">
+                <div class="profile__mdelliveryitem-col">
+                    <div class="profile__mdelliveryitem-label">Адрес доставки <span class="delllabel_cout">1</span>:</div>
+                    <div class="profile__mdelliveryitem-value hidden"></div>
+                    <div class="input-wrap">
+                        <input type="email" name="email" value="" class="input required" required="" placeholder="Введите адрес доставки">
+                        <div class="error-text">Поля обязательное для заполнения</div>
+                    </div>
+                </div>
+                <div class="profile__mdelliveryitem-rblock flb-csb">
+                    <a class="profile__mdelliveryitem-edit btn btn-grey hidden">Редактировать информацию</a>
+                    <a class="profile__mdelliveryitem-submit btn btn-red btn-submit">Сохранить информацию</a>
+                    <a class="profile__mdelliveryitem-remove flb-cc icon-trash"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+</html>

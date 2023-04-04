@@ -1,0 +1,39 @@
+<!--noindex-->
+<div class="popup__alert-addfavorite">Товар добавлен в избранное!</div>
+<div class="popup__alert-addtocart">Товар добавлен в корзину!</div>
+<div class="popup__modal">
+    <div class="popup__mask"></div>
+    <div class="popup popup__successfull">
+        <a class="popup__close flb-cc icon-close"></a>
+        <div class="popup__title">Спасибо!</div>
+        <div class="text">Ваша заявка принята!</div>
+    </div>
+    <form action="" method="POST" class="form popup__backcall popup" data-popup="popupbackcall">
+        <a class="popup__close flb-cc icon-close"></a>
+        <div class="popup__title ta-c">Заказать на обратный звонок</div>
+        <div class="input-wrap mb15">
+            <input type="text" name="name" value="" class="input required" required="required" placeholder="ФИО">
+            <div class="error-text">Поля обязательное для заполнения</div>
+        </div>
+        <div class="input-wrap mb15">
+            <input type="text" name="phone" value="" class="input required phone-mask" required="required"
+                placeholder="+7(___)___-__-__*">
+            <div class="error-text">Поля обязательное для заполнения</div>
+        </div>
+        <div class="input-wrap mb15">
+            <input type="text" name="mail" value="" class="input" placeholder="E-mail">
+        </div>
+        <label class="checkbox checkbox-confid checkbox--required">
+            <input class="checkbox-input" type="checkbox" name="">
+            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+            <span class="checkbox-text fz-10">Нажимая кнопку «Отправить заявку» я соглашаюсь с условиями <a href="">Пользовательского
+                    соглашения</a> и даю свое согласие на <a href="">обработку моих персональных данных</a> в соответствии с законом
+                №152-ФЗ «О персональных данных» от 27.07.2006</span>
+        </label>
+        <button class="btn btn-red btn-submit w100">Отправить заявку <i class="icon icon-enter-left"></i></button>
+    </form>
+    <div class="popup popup__video">
+        <a class="popup__close flb-cc icon-close"></a>
+    </div>
+</div>
+<!--noindex-->

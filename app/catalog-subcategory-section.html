@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Каталог - Товарная группа" -->
+<!--#include virtual="/components/header/head.html" -->
+
+<body>
+    <!--#include virtual="/components/header/header.html" -->
+    <div class="section__page catalog__page">
+        <ul class="container breadcrumbs flb-cs">
+            <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+            <li><a href="">Каталог</a> <i class="icon-angle-right"></i></li>
+            <li><a href="">Диваны</a> <i class="icon-angle-right"></i></li>
+            <li><a href="">Прямые диваны</a> <i class="icon-angle-right"></i></li>
+            <li><span>Пружинный блок</span></li>
+        </ul>
+        <div class="container mb100-80-80">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3_5">
+                    <div class="filter">
+                        <a class="filter__close flb-cc show-md icon-close"></a>
+                        <div class="section__h4 flb-cc show-md mb30">Фильтр:</div>
+                        <ul class="filter__sidebarmenu mb20 hide-md">
+                            <li class="filter__sidebarmenu-backlink">
+                                <a href="">
+                                    <i class="icon-angle-left"></i>
+                                    <span>Прямые диваны</span>
+                                </a>
+                            </li>
+                            <li class="filter__sidebarmenu-lititle">Пружинный блок</li>
+                            <li class="filter__sidebarmenu-li"><a href="">Классические</a></li>
+                            <li class="filter__sidebarmenu-li"><a href="">Современные</a></li>
+                            <li class="filter__sidebarmenu-li"><a href="">Мини-стенки</a></li>
+                            <li class="filter__sidebarmenu-li"><a href="">Недорогие</a></li>
+                        </ul>
+                        <div class="filter__item mb20">
+                            <a class="filter__item-title is-open">
+                                <div class="select-option">Наличие</div>
+                                <i class="icon icon-angle-down"></i>
+                            </a>
+                            <div class="filter__item-props" style="display: block;">
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="instock">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">В наличии</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="instock">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">Под заказ</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="instock">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">Отсутствует в продаже</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter__item mb20">
+                            <a class="filter__item-title is-open">
+                                <div class="select-option">Стоимость товара</div>
+                                <i class="icon icon-angle-down"></i>
+                            </a>
+                            <div class="filter__item-props" style="display: block;">
+                                <div class="ionslider mb20 mt10">
+                                    <input type="text" class="ionslider__input" 
+                                        name="price" 
+                                        value=""
+                                        data-type="double"
+                                        data-min="500"
+                                        data-max="50000"
+                                        data-from="500"
+                                        data-to="50000"
+                                        data-postfix=" ₽"
+                                    />
+                                    <div class="ionslider__fline flb-csb">
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>500</span> ₽</div></div>
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>50000</span> ₽</div></div>
+                                    </div>
+                                </div> 
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="price">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">Менее 20 000 ₽</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="price">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">20 000 ₽ - 40 000 ₽</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="price">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">40 000 ₽ - 100 000 ₽</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" name="price">
+                                    <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                    <span class="checkbox-text">Более 100 000 ₽</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter__item mb20">
+                            <a class="filter__item-title is-open">
+                                <div class="select-option">Габариты</div>
+                                <i class="icon icon-angle-down"></i>
+                            </a>
+                            <div class="filter__item-props" style="display: block;">
+                                <div class="section__psm fw-600 mb20">Ширина:</div>
+                                <div class="ionslider mb20">
+                                    <input type="text" class="ionslider__input" 
+                                        name="price" 
+                                        value=""
+                                        data-type="double"
+                                        data-min="20"
+                                        data-max="2000"
+                                        data-from="20"
+                                        data-to="2000"
+                                        data-postfix=" см"
+                                    />
+                                    <div class="ionslider__fline flb-csb">
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>20</span> см</div></div>
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>2000</span> см</div></div>
+                                    </div>
+                                </div> 
+                                <div class="section__psm fw-600 mb20">Высота:</div>
+                                <div class="ionslider mb20">
+                                    <input type="text" class="ionslider__input" 
+                                        name="price" 
+                                        value=""
+                                        data-type="double"
+                                        data-min="20"
+                                        data-max="2000"
+                                        data-from="20"
+                                        data-to="2000"
+                                        data-postfix=" см"
+                                    />
+                                    <div class="ionslider__fline flb-csb">
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>20</span> см</div></div>
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>2000</span> см</div></div>
+                                    </div>
+                                </div> 
+                                <div class="section__psm fw-600 mb20">Высота:</div>
+                                <div class="ionslider mb20">
+                                    <input type="text" class="ionslider__input" 
+                                        name="price" 
+                                        value=""
+                                        data-type="double"
+                                        data-min="20"
+                                        data-max="2000"
+                                        data-from="20"
+                                        data-to="2000"
+                                        data-postfix=" см"
+                                    />
+                                    <div class="ionslider__fline flb-csb">
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__min">от <span>20</span> см</div></div>
+                                        <div class="ionslider__fline-input input flb-cs"><div class="ionslider__max">до <span>2000</span> см</div></div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <button class="filter__btn-moreparams btn btn-dark-sdw w100 mb20">Все фильтры</button>
+                        <button class="filter__btn-reset btn btn-dark-invr w100 mb20">Сбросить фильтры</button>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8_5 pl-exl-30">
+                    <div class="catalog__superh1 flb-cs mb40">
+                        <div class="catalog__subcatcard-icon icon--w118 flb-cc mr25">
+                            <img src="img/catalog/subcategory/cat-icon3.svg" width="72" height="72" alt="Прямые диваны">
+                        </div>
+                        <div class="section__vhr-md mr25"></div>
+                        <div class="section__h3 flb-cs">
+                            <h1>Пружинный блок</h1>
+                            <div class="cart__countshtuk ml10">12 шт</div>
+                        </div>
+                    </div>
+                    <div class="catalog__tagsblock flb-sb mb30">
+                        <div class="catalog__tagsblock-title section__pxs">Теги:</div>
+                        <div class="catalog__tagsblock-listbtn flb-cs scrolly-hidden">
+                            <a href="" class="catalog__tagsbtn is-active btn btn-grey">#Ортопедические</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Диваны-кровати</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Недорогие</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Детские</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Лофт</a>
+                            <a href="" class="catalog__tagsbtn is-disabled btn btn-grey">#Ортопедические</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Недорогие</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Детские</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Лофт</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Ортопедические</a>
+                            <a href="" class="catalog__tagsbtn btn btn-grey">#Ортопедические</a>
+                            <a href="" class="link-btn">Показать еще</a>
+                        </div>
+                    </div>
+                    <div class="filter__selectprops-flexlist scrolly-hidden flb-ss mb20">
+                        <button class="btn btn-grey">
+                            <span>В наличии</span>
+                            <i class="icon icon-close"></i>
+                        </button>
+                        <button class="btn btn-grey">
+                            <span>Недорогие</span>
+                            <i class="icon icon-close"></i>
+                        </button>
+                        <button class="btn btn-grey">
+                            <span>Менее 2-х метров </span>
+                            <i class="icon icon-close"></i>
+                        </button>
+                        <button class="btn btn-grey">
+                            <span>Менее 20 000 ₽</span>
+                            <i class="icon icon-close"></i>
+                        </button>
+                        <button class="btn btn-grey">
+                            <span>Под заказ</span>
+                            <i class="icon icon-close"></i>
+                        </button>
+                    </div>
+                    <button class="filter__btn-show w100 btn btn-dark mb40 show-md">Показать фильтр</button>
+                    <div class="catalog__sort flb-cs mb20">
+                        <span>Сортировка:</span>
+                        <a href="" class="catalog__sort-btn">
+                            <span>Сначала дешевые</span>
+                            <i class="icon-sorting-down"></i>
+                        </a>
+                    </div>
+                    <div class="catalog__rowproductlist row">
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item2.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <div class="stock__slider-item type--card flb-cs ta-c">
+                                <div class="stock__slider-item_img"><img src="img/stock/slider-img.jpg" alt="Cкидки 50%"></div>
+                                <div class="stock__slider-item_info">
+                                    <div class="section__h5 mb15"><a href="" class="wt-color">Скидки 50%</a></div>
+                                    <div class="section__pmd">На мебель прошлогодней коллекции</div>
+                                    <a href="" class="btn btn-wt w200">
+                                        <span>Посмотреть</span>
+                                        <i class="icon icon-enter-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item2.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item2.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20">
+                            <!--#include virtual="/components/catalog/product__item2.html" -->
+                        </div>
+                        <div class="col-xl-4 col-sm-6 mb20 flb-cc">
+                            <a href="" class="catalog__sgroup-showallbtn flb-cc">
+                                <i class="btn icon-close"></i>
+                                <span class="dashed-brd">Показать еще </span>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb80-80-60">
+            <!--#include virtual="/components/company/company__banner.html" -->
+        </div>
+        <div class="container">
+            <div class="mb40">
+                <div class="section__h5 mb40">
+                    <h2>SEO-текст</h2>
+                </div>
+                <div class="content mb40">
+                    <p>Мебель более чем от 100 Фабрик России, собранная для Вас в одном месте по самым доступным ценам.</p>
+                    <p>Ассортимент продукции и структура каталога представлена из разных ценовых сегментов. Мы позаботились,
+                        чтобы каждый покупатель смог найти продукцию отличного качества по комфортной цене. Модели
+                        разнообразны и структурированы по назначению, стилистике, дизайну, материалам. «100 Фабрик» - это
+                        обширный и глубокий, иллюстрированный каталог мебели отечественных производителей. Созданный и
+                        направленный на то, чтобы наши покупатели легко нашли подходящие модели.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--#set var="title" value="Оформление заказа" -->
+<!--#include virtual="/components/header/head.html" -->
+
+<body>
+    <!--#include virtual="/components/header/header.html" -->
+    <main class="cart__page section__page">
+        <div class="container">
+            <ul class="breadcrumbs flb-cs">
+                <li><a href="">Главная</a> <i class="icon-angle-right"></i></li>
+                <li><span>Оформление заказа</span></li>
+            </ul>
+            <div class="section__h3 mb20">
+                <h1>Оформление заказа</h1>
+            </div>
+            <div class="checkout__page-infosmltotal flb-cs">Товаров в корзине: <span>12 шт.</span> <i class="icon-angle-right ml10 mr10"></i> На сумму:  <span>120 280 ₽</span></div>
+            <div class="section__mdhr mt40 mb40"></div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-7 mb20">
+                    <div class="checkout__from">
+                        <div class="checkout__step is-open step--1 mb20" data-step="1">
+                            <div class="checkout__step-header flb-cs">
+                                <div class="checkout__step-header_number">1</div>
+                                <div class="checkout__step-header_title">Информация о покупателе:</div>
+                                <a class="checkout__step-header_edit btn btn-grey">Редактировать</a>
+                            </div>
+                            <div class="checkout__step-mdataform">
+                                <div class="flb-cs">
+                                    <div class="profile__mdataform-col">
+                                        <div class="profile__mdataform-label">ФИО:</div>
+                                        <div class="profile__mdataform-value" data-input="name"></div>
+                                    </div>
+                                    <div class="section__vhr-md mr40 mb20 hide-md"></div>
+                                    <div class="profile__mdataform-col">
+                                        <div class="profile__mdataform-label">Номер телефона:</div>
+                                        <div class="profile__mdataform-value" data-input="phone"></div>
+                                    </div>
+                                    <div class="section__vhr-md mr40 mb20 hide-md"></div>
+                                    <div class="profile__mdataform-col">
+                                        <div class="profile__mdataform-label">E-mail:</div>
+                                        <div class="profile__mdataform-value" data-input="email"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="" method="" class="checkout__step-bodyform form">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-12 col-md-6 mb20">
+                                        <div class="input-wrap">
+                                            <div class="label-input">ФИО<span class="red">*</span></div>
+                                            <input type="text" name="name" value="" class="input required" required="required" data-input="name">
+                                            <div class="error-text">Поля обязательное для заполнения</div>
+                                            <a class="value-clear icon-close-r"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-md-6 mb20">
+                                        <div class="input-wrap">
+                                            <div class="label-input">Телефон<span class="red">*</span></div>
+                                            <input type="text" name="phone" value="" class="input required phone-mask" required="required" data-input="phone">
+                                            <div class="error-text">Поля обязательное для заполнения</div>
+                                            <a class="value-clear icon-close-r"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row flb-cs">
+                                    <div class="col-xl-8 col-lg-12 col-md-8 mb20">
+                                        <div class="input-wrap" data-js="togglereq_email">
+                                            <div class="label-input">E-mail<span class="red">*</span></div>
+                                            <input type="email" name="name" value="" class="input required" data-input="email">
+                                            <div class="error-text">Поля обязательное для заполнения</div>
+                                            <a class="value-clear icon-close-r"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-12 col-md-4 mb20">
+                                        <label class="checkbox checkbox mb5 w100" data-js="togglereq_email">
+                                            <input class="checkbox-input" name="yes_email" type="checkbox">
+                                            <span class="checkbox-inputcustom icon-check flb-cc checked"></span>
+                                            <span class="checkbox-text fz14">У меня нет E-mail</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row flb-cs">
+                                    <div class="col-exl-4 col-xl-5 mb20">
+                                        <button class="btn btn-red btn-submit w100">Выбрать способ получения</button>
+                                    </div>
+                                    <div class="col-exl-8 col-xl-7 mb20">
+                                        <label class="checkbox checkbox-confid checkbox--required">
+                                            <input class="checkbox-input" type="checkbox" name="">
+                                            <span class="checkbox-inputcustom icon-check flb-cc"></span>
+                                            <span class="checkbox-text fz14">Я соглашаюсь с условиями <a href=""> пользовательского соглашения</a> и даю согласие на обработку персональных данных</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="checkout__step step--2 mb20 is-disabled" data-step="2">
+                            <div class="checkout__step-header flb-cs">
+                                <div class="checkout__step-header_number">2</div>
+                                <div class="checkout__step-header_title">Способ получения</div>
+                                <a class="checkout__step-header_edit btn btn-grey">Редактировать</a>
+                            </div>
+                            <div class="checkout__step-mdataform">
+                                <div class="flb-cs">
+                                    <div class="profile__mdataform-col">
+                                        <div class="profile__mdataform-label">Адрес:</div>
+                                        <div class="profile__mdataform-value" data-input="address">г. Ставрополь, ул. Ленина, 243, кв. 45</div>
+                                    </div>
+                                    <div class="section__vhr-md mr40 mb20"></div>
+                                    <div class="profile__mdataform-col">
+                                        <div class="profile__mdataform-label">Стоимость доставки:</div>
+                                        <div class="profile__mdataform-value" data-input="address_price">895 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__step-bodyform">
+                                <div class="checkout__step-tabs tab-btn__wrapper flb-ss mb30" data-tabs="dellivery_checkout">
+                                    <button class="btn btn-grey tab-active tab-btn">Доставка</button>
+                                    <button class="btn btn-grey tab-btn">Самовывоз</button>
+                                </div>
+                                <div class="tabs-content__wrap" data-tabs="dellivery_checkout">
+                                    <div class="tab-content">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-12 col-md-10 mb30">
+                                                <div class="section__psm mb10">Выберите из списка ваших адресов доставки:</div>
+                                                <div class="select" data-input="address">
+                                                    <div class="select-input flb-cs">
+                                                        <input type="hidden" name="select" value="г. Ставрополь, ул. Ленина, 243, кв. 45">
+                                                        <div class="select-inputvalue">г. Ставрополь, ул. Ленина, 243, кв. 45</div>
+                                                        <i class="icon icon-angle-down"></i>
+                                                    </div>
+                                                    <div class="select-options">
+                                                        <div class="select-optionvalue">г. Ставрополь, ул. Ленина, 243, кв. 45</div>
+                                                        <div class="select-optionvalue">г. Ставрополь, ул. Мира, 243, кв. 45</div>
+                                                        <div class="select-optionvalue">г. Ставрополь, ул. Артема, 243, кв. 45</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content hidden">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-12 col-md-10 mb30">
+                                                <div class="section__psm mb10">Выберите точку самовывоза:</div>
+                                                <div class="select" data-input="address">
+                                                    <div class="select-input flb-cs">
+                                                        <input type="hidden" name="select" value="г. Ставрополь, ул. Ленина, 243, кв. 45">
+                                                        <div class="select-inputvalue">г. Ставрополь, ул. Ленина, 243, кв. 45</div>
+                                                        <i class="icon icon-angle-down"></i>
+                                                    </div>
+                                                    <div class="select-options">
+                                                        <div class="select-optionvalue">г. Ставрополь, ул. Ленина, 243, кв. 45</div>
+                                                        <div class="select-optionvalue">г. Ставрополь, ул. Мира, 243, кв. 45</div>
+                                                        <div class="select-optionvalue">г. Ставрополь, ул. Артема, 243, кв. 45</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flb-cs">
+                                        <div class="mr20 mb20">
+                                            <div class="section__pxs">Стоимость:</div>
+                                            <div class="section__subtitle">895 ₽ *</div>
+                                        </div>
+                                        <button class="checkout__step-nextstep btn btn-red w100-mobile mb20" data-nextstep="3">Выбрать вариант оплаты</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__step step--3 is-disabled mb20" data-step="3">
+                            <div class="checkout__step-header flb-cs">
+                                <div class="checkout__step-header_number">3</div>
+                                <div class="checkout__step-header_title">Варианты оплаты *</div>
+                                <a class="checkout__step-header_edit btn btn-grey">Редактировать</a>
+                            </div>
+                            <div class="checkout__step-bodyform">
+                                <div class="section__psm mb10">Выберите способ оплаты</div>
+                                <div class="checkout__step-delllist mb20 flb-ss">
+                                    <label class="checkout__checkbox checkbox mr20 mb20">
+                                        <input class="checkout__checkbox-input hidden" type="radio" name="paytype" value="" checked>
+                                        <div class="checkout__checkbox-container flb-cs">
+                                            <div class="checkout__checkbox-btn type-radio flb-cc"></div>
+                                            <div class="checkout__checkbox-text">
+                                                Оплата при получении заказа
+                                                <small>Картой или наличными</small>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="checkout__checkbox checkbox mr20 mb20">
+                                        <input class="checkout__checkbox-input hidden" type="radio" name="paytype" value="">
+                                        <div class="checkout__checkbox-container flb-cs">
+                                            <div class="checkout__checkbox-btn type-radio flb-cc"></div>
+                                            <div class="checkout__checkbox-text">
+                                                Предоплата заказа на Р/С
+                                                <small>для юридических лиц и ИП</small>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="checkout__checkbox checkbox mr20 mb20">
+                                        <input class="checkout__checkbox-input hidden" type="radio" name="paytype" value="">
+                                        <div class="checkout__checkbox-container flb-cs">
+                                            <div class="checkout__checkbox-btn type-radio flb-cc"></div>
+                                            <div class="checkout__checkbox-text">
+                                                Онлайн оплата
+                                                <small>Оплатить онлайн картой</small>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="checkout__checkbox checkbox mr20 mb20">
+                                        <input class="checkout__checkbox-input hidden" type="radio" name="paytype" value="">
+                                        <div class="checkout__checkbox-container flb-cs">
+                                            <div class="checkout__checkbox-btn type-radio flb-cc"></div>
+                                            <div class="checkout__checkbox-text">
+                                                Подарочным сертификатом
+                                                <small>Онлайн подарочным сертификатом</small>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="flb-cs">
+                                    <div class="mr20 mb20">
+                                        <div class="section__pxs">Итого к оплате:</div>
+                                        <div class="section__subtitle">120 280 ₽</div>
+                                    </div>
+                                    <button class="checkout__step-submitform btn btn-red w100-mobile mb20">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 pl-exl-60 mb40">
+                    <div class="checkout__priceable mb40">
+                        <div class="checkout__priceable-body">
+                            <div class="checkout__priceable-tr flb-csb">
+                                <div>Кухня Классика (II категория), дубзолотистый, 38 мм, 250 мм</div>
+                                <div>72 280 ₽</div>
+                            </div>
+                            <div class="checkout__priceable-pxs section__pxs">Цвет: <span class="fw-700">Дуб золотистый 38 мм</span></div>
+                            <div class="checkout__priceable-pxs section__pxs">Размер: <span class="fw-700">250x480x160</span></div>
+                            <div class="checkout__priceable-pxs section__psm">Размер: <span class="fw-700">Состоит из 6 модулей</span></div>
+                        </div>
+                        <div class="checkout__priceable-body">
+                            <div class="checkout__priceable-tr flb-csb">
+                                <div>Дверное полотно Купе Лайт</div>
+                                <div>24 080 ₽</div>
+                            </div>
+                            <div class="checkout__priceable-pxs section__pxs">Размер: <span class="fw-700">250x480x160</span></div>
+                        </div>
+                        <div class="checkout__priceable-body">
+                            <div class="checkout__priceable-tr flb-csb">
+                                <div>Купе Лайт</div>
+                                <div>24 080 ₽</div>
+                            </div>
+                            <div class="checkout__priceable-pxs section__pxs">Стекло: <span class="fw-700">Закаленное</span></div>
+                            <div class="checkout__priceable-pxs section__pxs">Размер: <span class="fw-700">250x480x160</span></div>
+                        </div>
+                        <div class="checkout__priceable-body">
+                            <div class="checkout__priceable-tr flb-csb">
+                                <div>Дверное полотно Соло</div>
+                                <div>53 320 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__step-infototalprops mb20" data-step="1">
+                        <div class="section__pxs">Стоимость товаров</div>
+                        <div class="fw-700">204 280 ₽</div>
+                    </div>
+                    <div class="checkout__step-infototalprops mb20 hidden" data-step="2">
+                        <div class="section__pxs">Стоимость доставки</div>
+                        <div class="fw-700">895 ₽</div>
+                    </div>
+                    <div class="checkout__step-infototalprops mb20 hidden" data-step="3">
+                        <div class="section__pxs">Стоимость итого</div>
+                        <div class="fw-700">205 175 ₽</div>
+                    </div>
+                    <div class="checkout__step-infototalprops mb10 hidden" data-step="2">
+                        <hr>
+                        <div class="section__pxs op1">* Стоимость доставка указана в пределах МКАД, далее - 30 руб. за км.</div>
+                    </div>
+                    <div class="checkout__step-infototalprops mb20 hidden" data-step="3">
+                        <div class="section__pxs op1">** Финальный вариант оплаты Вы сможете уточнить при звонке менеджера магазина.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--#include virtual="/components/footer/footer.html" -->
+    <!--#include virtual="/components/footer/modals.html" -->
+    <!--#include virtual="/components/footer/footer-js.html" -->
+</body>
+
+</html>

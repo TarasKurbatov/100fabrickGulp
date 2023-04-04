@@ -1,0 +1,194 @@
+.lp{
+    &__page{
+        .breadcrumbs{
+            margin: 28px 0 48px;
+        }
+        .services__page-hnav{
+            padding-bottom: 28px;
+            border: 0;
+        }
+    }
+    &__intro{
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0px -60px 40px -50px rgba(51, 51, 51, 0.05), inset 0px 60px 40px -50px rgba(51, 51, 51, 0.05);
+        &-bg{
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            &::after{
+                @include overlay;
+                z-index: 3;
+                background: linear-gradient(180deg, rgba(23, 27, 42, 0.25) 0%, rgba(23, 27, 42, 0) 105.51%), linear-gradient(0deg, rgba(23, 27, 42, 0.6), rgba(23, 27, 42, 0.6));
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-container{
+			position: relative;
+			z-index: 10;
+            min-height: 490px;
+			padding-top: 60px;
+			padding-bottom: 60px;
+            color: #fff;
+			text-align: center;
+		}
+		&-title{
+			margin-bottom: 20px;
+			a{
+				color: #fff;
+				border-color: rgba(#fff, .3);
+				&:hover{
+					color: $red;
+					border-color: rgba($red, .7);
+				}
+			}
+		}
+		&-subtitle{
+			margin: 0 auto 40px;
+			max-width: 600px;
+		}
+        &-btn{
+            max-width: 360px;
+            width: 100%;
+        }
+		.breadcrumbs{
+			position: absolute;
+			z-index: 10;
+			top: 28px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: rgba(#fff, .6);
+			li{
+				a{
+					color: #fff;
+					border-color: rgba(#fff, .3);
+					&:hover{
+						color: $red;
+						border-color: rgba($red, .7);
+					}
+				}
+				i{
+					color: rgba(#fff, .3);
+				}
+				span{
+					color: rgba(#fff, .6);
+				}
+			}
+		}
+    }
+    &__formbnr{
+        position: relative;
+        padding: 54px 0;
+        color: #fff;
+        box-shadow: inset 0px -60px 40px -50px rgba(51, 51, 51, 0.05), inset 0px 60px 40px -50px rgba(51, 51, 51, 0.05);
+        &.bg--wt{
+            color: $dark;
+            .lp__formbnr-bg:after{
+                background: linear-gradient(0deg, rgba(243, 244, 247, 0.95), rgba(243, 244, 247, 0.95));
+            }
+            .lp__formbnr-confidcheckbox{
+                background: rgba(255, 255, 255, 0.5);
+                border: 1px solid rgba(52, 59, 76, 0.1);
+                .checkbox-text{
+                    a{
+                        color: $dark;
+                        border-color: rgba($dark, .3);
+                        &:hover{
+                            color: $red;
+                            border-color: rgba($red, .7);
+                        }
+                    }
+                }
+                .checkbox-inputcustom{
+                    border-color:  rgba(52, 59, 76, 0.2);
+                    background: #fff;
+                    &:hover{
+                        border-color: $red;
+                    }
+                }
+                .checkbox-input:checked+.checkbox-inputcustom {
+                    background: #ed1846;
+                    border-color: #ed1846;
+                }
+            }
+        }
+        &-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            &::after{
+                @include overlay;
+                background: linear-gradient(0deg, rgba(41, 41, 41, 0.8), rgba(41, 41, 41, 0.8));
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-confidcheckbox{
+            align-items: center;
+            padding: 20px;
+            background: rgba(13, 15, 19, 0.4);
+            border-radius: 16px;
+            .checkbox-text{
+                a{
+                    color: #fff;
+                    border-color: rgba(#fff, .3);
+                    &:hover{
+                        color: $red;
+                        border-color: rgba($red, .7);
+                    }
+                }
+            }
+            .checkbox-inputcustom{
+                border-color: rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0.2);
+                &:hover{
+                    border-color: $red;
+                }
+            }
+        }
+        .container{
+            z-index: 10;
+        }
+    }
+    &__fullwidthcover{
+        position: relative;
+        width: 100%;
+        height: 553px;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width : $lmbp-lg) { 
+    .lp__fullwidthcover{
+        height: 480px;
+    }
+}
+@media (max-width : $lmbp-md) { 
+    .lp__fullwidthcover{
+        height: 420px;
+    }
+}
+@media (max-width : $lmbp-sm) { 
+    .lp__fullwidthcover{
+        height: 340px;
+    }
+}

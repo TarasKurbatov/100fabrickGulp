@@ -1,0 +1,8 @@
+import '../js/parts/ui.js'
+import '../js/parts/header.js'
+import '../js/parts/shop.js'
+import '../js/parts/profile.js'
+import '../js/parts/company.js'
+import '../js/parts/info.js'
+import '../js/parts/contacts.js'
+import '../js/parts/footer.js'
